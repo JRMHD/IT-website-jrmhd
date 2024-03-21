@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SubscriberController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,6 @@ Route::get('/service', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+
+Route::post('/subscribe', [SubscriberController::class, 'store'])->name('subscribe');

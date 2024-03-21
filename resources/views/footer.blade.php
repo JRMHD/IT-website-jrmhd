@@ -47,7 +47,7 @@
                     }
                 </style>
 
-                <form id="newsletter-form" class="newsletter-form">
+                <form id="newsletter-form" class="newsletter-form" action="{{ route('subscribe') }}" method="POST">
                     @csrf
                     <div class="input-group">
                         <input type="text" name="name" placeholder="Name" required>

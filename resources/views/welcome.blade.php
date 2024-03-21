@@ -13,7 +13,7 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-    <link rel="icon" type="image/png" href="img\JRMHD-TECH-LOGO-TRANSPARENT-PNG.ico">
+    <link rel="icon" type="image/png" href="img/JRMHD-TECH-LOGO-TRANSPARENT-PNG.ico">
 
 
     <!--
