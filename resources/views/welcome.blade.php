@@ -51,6 +51,10 @@
         - #HERO
       -->
 
+
+
+
+
             <section class="section hero" id="home" aria-label="hero">
                 <div class="container">
                     <div class="hero-content">
@@ -82,6 +86,35 @@
             <!--
         - #FAQ
       -->
+
+
+
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; background-color: #f5f5f5; padding: 20px; border-radius: 10px; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);">
+                <div>
+                    <a href="#" style="text-decoration: none;">
+                        <div
+                            style="display: inline-block; padding: 8px 12px; background-color: #007bff; color: #fff; border-radius: 5px; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);">
+                            <span id="phoneNumber" style="font-size: 18px; font-weight: bold;"></span>
+                        </div>
+                    </a>
+                    <br>
+                    <span style="font-size: 14px; color: #555; font-weight: bold;">We're here to help! Contact us for
+                        inquiries or assistance.</span>
+                </div>
+                <a href="{{ url('Quote') }}" style="text-decoration: none;">
+                    <button
+                        style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background-color 0.3s;">
+                        Request a Free Quote
+                    </button>
+                </a>
+            </div>
+
+
+
+
+
+
 
             <section class="section faq" aria-label="frequently asked questions">
                 <div class="container">

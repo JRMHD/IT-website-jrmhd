@@ -55,7 +55,7 @@
                 <li>SEO Optimization</li>
                 <li>Content Management System</li>
             </ul>
-            <a href="#web-development" class="plan-button">Get Started</a>
+            <a href="{{ url('Quote') }}" class="plan-button">Get Started</a>
         </div>
         <div class="pricing-plan">
             <div class="plan-title">Web App Development</div>
@@ -66,18 +66,18 @@
                 <li>Database Integration</li>
                 <li>API Development</li>
             </ul>
-            <a href="#web-app-development" class="plan-button">Get Started</a>
+            <a href="{{ url('Quote') }}" class="plan-button">Get Started</a>
         </div>
         <div class="pricing-plan">
             <div class="plan-title">Digital Marketing</div>
-            <div class="plan-price">$200 and up</div>
+            <div class="plan-price">$90 and up</div>
             <ul class="plan-features">
                 <li>SEO</li>
                 <li>Social Media Marketing</li>
                 <li>Email Marketing</li>
                 <li>Analytics and Reporting</li>
             </ul>
-            <a href="#digital-marketing" class="plan-button">Get Started</a>
+            <a href="{{ url('Quote') }}" class="plan-button">Get Started</a>
         </div>
         <div class="pricing-plan">
             <div class="plan-title">Graphic Designing</div>
@@ -88,7 +88,7 @@
                 <li>Print Design</li>
                 <li>Illustration</li>
             </ul>
-            <a href="#graphic-designing" class="plan-button">Get Started</a>
+            <a href="{{ url('Quote') }}" class="plan-button">Get Started</a>
         </div>
         <div class="pricing-plan">
             <div class="plan-title">UI/UX Design</div>
@@ -99,7 +99,7 @@
                 <li>User Testing</li>
                 <li>Responsive Design</li>
             </ul>
-            <a href="#ui-ux-design" class="plan-button">Get Started</a>
+            <a href="{{ url('Quote') }}" class="plan-button">Get Started</a>
         </div>
     </div>
     <div class="custom-pricing">

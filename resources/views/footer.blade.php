@@ -99,7 +99,7 @@
                     <a href="{{ url('about') }}" class="footer-link">About JRMHD</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Portfolio</a>
+                    <a href="{{ url('Quote') }}" class="footer-link">Request a Free Quote</a>
                 </li>
                 <li>
                     <a href="#faq" class="footer-link">FQs</a>
@@ -200,31 +200,35 @@
 
     async function setContactInfo() {
         const userCountryCode = await getUserCountry();
-
         const locationElement = document.getElementById('location');
         const phoneNumberElement = document.getElementById('phoneNumber');
+        const phoneNumberLink = phoneNumberElement.parentNode;
 
         if (userCountryCode === 'US') {
             locationElement.textContent = 'New Jersey, USA';
-            phoneNumberElement.href = 'tel:(862)201-3375';
             phoneNumberElement.textContent = '(862) 201-3375';
+            phoneNumberLink.href = 'tel:(862)201-3375';
         } else if (['KE', 'TZ', 'UG', 'RW', 'BI', 'SS', 'ET', 'SO', 'DJ', 'ER', 'KM', 'MU', 'MG', 'SC', 'MZ', 'ZM',
                 'ZW', 'MW', 'LS', 'NA', 'BW', 'SZ', 'ZA', 'AO', 'CF', 'TD', 'CM', 'CG', 'GQ', 'GA', 'GW', 'GN',
                 'SL', 'LR', 'CI', 'BF', 'GH', 'TG', 'BJ', 'NE', 'NG', 'ML', 'SN', 'GM', 'CV', 'ST', 'MR', 'EH',
                 'DZ', 'TN', 'LY', 'EG', 'SD'
             ].includes(userCountryCode)) {
             locationElement.textContent = 'Nairobi, Kenya';
-            phoneNumberElement.href = 'tel:+254706378245';
             phoneNumberElement.textContent = '+254 706 378 245';
+            phoneNumberLink.href = 'tel:+254706378245';
         } else {
             locationElement.textContent = 'New York, USA';
-            phoneNumberElement.href = 'tel:(862)201-3375';
             phoneNumberElement.textContent = '(862) 201-3375';
+            phoneNumberLink.href = 'tel:(862)201-3375';
         }
+
+        // Add click event listener to the phone number link
+        phoneNumberLink.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent the default link behavior
+            window.location.href = phoneNumberLink.href; // Open the phone dialer
+        });
     }
 
     window.addEventListener('DOMContentLoaded', setContactInfo);
-
-
     document.getElementById('currentYear').textContent = new Date().getFullYear();
 </script>

@@ -54,9 +54,10 @@
 
             <!-- Left contact page -->
 
-            <form id="contact-form" class="form-horizontal" role="form"
+            <form id="contact-form" action="{{ route('submit.form') }}" method="POST" class="form-horizontal"
+                role="form"
                 style="max-width: 400px; width: 100%; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px; text-align: left;">
-
+                @csrf
                 <div class="form-group" style="margin-bottom: 20px;">
                     <input type="text" class="form-control" id="name" placeholder="Name" name="name"
                         value="" required
@@ -79,14 +80,19 @@
                     style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
 
 
-                @if (session('success'))
-                    <div class="alert alert-success">{{ session('success') }}</div>
-                @endif
-
-
                 <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND"
                     style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; transition: background-color 0.3s;">Send</button>
+                <style>
+                    .success-message {
+                        color: green;
+                    }
+                </style>
+
+                @if (session('success'))
+                    <div class="success-message">{{ session('success') }}</div>
+                @endif
             </form>
+
 
             <!-- Right contact page -->
 
