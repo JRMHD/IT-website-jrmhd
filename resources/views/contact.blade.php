@@ -113,7 +113,7 @@
                     </li>
                     <li class="footer-item">
                         <ion-icon name="mail" aria-hidden="true"></ion-icon>
-                        <a href="mailto:info@jrmhd.com" class="contact-link">info@jrmhd.tech</a>
+                        <a href="mailto:info@jrmhd.tech" class="contact-link">info@jrmhd.tech</a>
                     </li>
 
                 </ul>

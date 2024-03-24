@@ -29,6 +29,8 @@
                         border-radius: 5px;
                         border: 1px solid #ccc;
                         font-size: 16px;
+                        color: white;
+                        /* Change text color to dark gray */
                     }
 
                     button[type="submit"] {
@@ -51,15 +53,13 @@
                     @csrf
                     <div class="input-group">
                         <input type="text" name="name" placeholder="Name" required>
-
                     </div>
                     <div class="input-group">
                         <input type="email" name="email_address" placeholder="Email" required>
-
                     </div>
                     <button type="submit" class="form-btn">Subscribe</button>
-
                 </form>
+
 
                 @if ($errors->has('email_address'))
                     <div class="error-message">{{ $errors->first('email_address') }}</div>
