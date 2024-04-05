@@ -17,7 +17,8 @@ class EmailNotification extends Mailable
      */
     public function build()
     {
-        return $this->subject('Get a Proffessional Website for Your Business 50% OFF')
+        return $this->subject('Transform Your Logistics Business with Cutting-Edge Tech Solutions!
+        ')
             ->markdown('emails.email-notification'); // Adjust view name as needed
     }
 }
